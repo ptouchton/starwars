@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "./Navbar";
 import People from "./components/People";
 import Planets from "./components/Planets";
-import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
+import { QueryClient, QueryClientProvider } from 'react-query'
 
 const queryClient = new QueryClient();
 
