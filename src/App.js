@@ -3,6 +3,8 @@ import Navbar from "./Navbar";
 import People from "./components/People";
 import Planets from "./components/Planets";
 import { QueryClient, QueryClientProvider } from 'react-query'
+import { ReactQueryDevtools } from 'react-query/devtools'
+
 
 const queryClient = new QueryClient();
 
@@ -22,6 +24,7 @@ function App() {
           </div>
         </div>
       </div>
+      <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   );
 }
